@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Ping server
+      win_ping:
+      
+    - name: Disable firewall
+      win_shell: hostname
