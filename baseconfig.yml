@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+    - name: Ping server
+      ping:
+      
+    - name: Disable firewall
+      service:
+        name: firewalld
+        state: stopped
+        
