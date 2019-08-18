@@ -10,3 +10,8 @@
         name: firewalld
         state: stopped
         
+    - name: Add the user ansibletower
+      user:
+        name: ansibletower
+        comment: Ansible Tower User
+        
